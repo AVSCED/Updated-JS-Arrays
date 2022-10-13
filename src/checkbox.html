@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select and Delete</title>
+    <link rel="stylesheet" href="./checkbox.css">
+</head>
+<body>
+  <div class="main-container">
+   <br>
+   <hr>
+   <h4>Add products Here</h4>
+           <div class="row1"> <!--To Add various items and display them in a table-->
+
+
+             <div class="row-input">
+                 <p>Company :</p> <input type="String" id="company" >
+                  <br><br>
+                 <p>Model : </p><input type="String" id="model" >
+                  <br><br>
+                 <p> Memory : </p><input type="number" id="memory" >
+                  <br><br>
+                 <p>Product Price : </p><input type="number" id="price" >
+             </div>
+                 <br>
+             <div > <button onclick="addProd()" id="sub">Add Product</button></div>
+            </div>
+
+              <br>
+               <hr>
+
+          <h4> Product Info: </h4> <!--Display Contents-->
+           <table id="table1"></table> 
+           <br>
+           <button onclick="deleteProd()">Delete Selected</button>
+          <hr>
+          
+</div>
+</body>
+<script src="./checkbox.js"></script>
+</html>

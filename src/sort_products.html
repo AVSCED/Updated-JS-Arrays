@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sort_product.css">
+</head>
+<body>
+    <h4>Sort Products :</h4> <br>
+    <label for="order">-Sort-
+        <select name="order" id="order">
+            <option selected >-Sort-</option>
+            <option value="ascend" >Ascending Order</option>
+            <option value="descend" >Descending Order</option>
+        </select>
+    </label>
+    <label for="category">-Sort By-
+        <select name="category" id="category" onchange="sortby()">
+            <option selected>-Sort By-</option>
+            <option value="product_id" type="string">Company</option>
+            <option value="product_name" type="string">Model</option>
+            <option value="product_memory">Memory</option>
+            <option value="product_price"  >Price</option>
+        </select>
+    </label>
+    <table id="table1"></table>
+   </div>
+</body>
+<script src="./sort_product.js"></script>
+</html>

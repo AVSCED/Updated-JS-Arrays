@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" src="./generateBill.css">
+</head>
+<body>
+    <div class="main-container">
+      <h4>View Products in Inventory</h4>
+      <!--To Add various items and display them in a table-->
+      <div>
+        <button onclick="viewProducts()" id="sub">View Products</button>
+      </div>
+      <hr />
+      <h4>Product Info:</h4>
+      <!--Display Contents-->
+      <table id="table1"></table>
+      <hr />
+      <br />
+      <div class="row2">
+
+        <p>Select and Add Products</p>
+      <label >
+        <select id="cart">
+        <option selected >Select</option>
+        <option value="Samsung" >Samsung A50</option>
+        <option value="Apple">Apple iPhone 12</option>
+        <option value="Nokia" >Nokia M30</option>
+        <option value="Vivo">Vivo V15</option>
+        <option value="Mi" >Mi K20</option>
+        </select>
+        <form><input type="text" id="quantityAdded"></form>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="generateBill()">Generate Bill</button>
+         
+    </label>
+      
+    </div>
+    <br>
+    <h4>Your Cart Items :</h4>
+    <!--Display Contents-->
+    <table id="table3"></table>
+    <hr />
+    </div>
+    <br>
+    <h4>Your Cart Items Bill Amount:</h4>
+    <!--Display Contents-->
+    <table id="table4"></table>
+    <hr />
+    <p>Here is your Total bill Amount</p><p id="billAmount"><b></b></p>
+    <hr>
+    <br>
+
+    </div>
+
+  </body>
+  <script src="./generateBill.js"></script>
+</html>

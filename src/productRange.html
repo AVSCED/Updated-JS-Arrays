@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" src="./productRange.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h4>View Products in Inventory</h4>
+      <!--To Add various items and display them in a table-->
+      <div>
+        <button onclick="viewProducts()" id="sub">View Products</button>
+      </div>
+      <hr />
+      <h4>Product Info:</h4>
+      <!--Display Contents-->
+      <table id="table1"></table>
+      <hr />
+      <br />
+      <div class="row2">
+        <p>Select Range</p>
+        <label>
+          <form>
+            <input
+              type="number"
+              id="lowerLimit"
+              placeholder="Enter Lower Range"
+            />
+            &nbsp;<input
+              type="number"
+              id="upperLimit"
+              placeholder="Enter Lower Range"
+            />
+          </form>
+          <br />
+          <button onclick="priceRange()">Search Product</button>
+        </label>
+        <hr>
+
+      </div>
+      <br />
+      <h4>Products under this Range:</h4>
+      <!--Display Contents-->
+      <table id="table3"></table>
+      <hr />
+    </div>
+  </body>
+  <script src="./productRange.js"></script>
+</html>

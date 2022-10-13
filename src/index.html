@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+         <div class="nav">
+            <a href="./checkbox.html">Select and Delete</a>
+            <a href="./quantity.html">Update Inventory Quantity </a>
+            <a href="./searchDisplay.html">Search and Display</a>
+            <a href="./productCart.html">Add to Cart</a>
+            <a href="./generateBill.html">Generate Bill</a>
+            <a href="./productRange.html">Product Range</a>
+            <a href="./sort_products.html"> Sort Products</a>
+            <a href="./productRating.html">Rate Products</a>
+        </div>
+        <br>
+        <hr>
+        <h4>Add products Here</h4>
+                <div class="row1"> <!--To Add various items and display them in a table-->
+
+
+                  <div class="row-input">
+                      <p>Company :</p> <input type="String" id="company" >
+                       <br><br>
+                      <p>Model : </p><input type="String" id="model" >
+                       <br><br>
+                      <p> Memory : </p><input type="number" id="memory" >
+                       <br><br>
+                      <p>Product Price : </p><input type="number" id="price" >
+                  </div>
+                      <br>
+                  <div > <button onclick="addProd()" id="sub">Add Product</button></div>
+                 </div>
+
+                   <br>
+                    <hr>
+
+               <h4> Product Info: </h4> <!--Display Contents-->
+                <table id="table1"></table>
+               <hr>
+               <br>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

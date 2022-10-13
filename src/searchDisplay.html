@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./searchDisplay.css">
+</head>
+<body>
+    <div class="main-container"><!--Add a dropdown and a textbox with search button to search and display the product according to the attachment.-->
+        <div class="row2">
+          <label for="details">Select Field
+              <select id="element_id">
+                  <option selected >Select</option>
+                  <option value="company">Company</option>
+                  <option value="model">Model</option>
+                  <option value="memory">Memory</option>
+                  <option value="price" >Price</option>
+              </select>
+          </label>
+          <form><input type="text" id="search_key"></form>
+          <button onclick="searchProd()">Search</button>
+        </div>
+        <br>
+        <table id="table3"></table>
+
+     </div>
+</body>
+<script src="./searchDisplay.js"></script>
+</html>
