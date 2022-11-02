@@ -25,7 +25,7 @@ function dsiplay(data) {
   let s;
   let c=0;
   s =" <tr><th>Company :</th> <th>Model :</th> <th>Memory GB:</th>  <th>Price :</th> <th>Action :</th></tr> ";
-     if (data.length >= 1){
+     
      data.forEach(e => {
       s +=
         "<tr><td>" +
@@ -46,16 +46,25 @@ function dsiplay(data) {
         "</td></tr>";
         c++;
     });
+    document.getElementById("table1").innerHTML = s;
   }
-  document.getElementById("table1").innerHTML = s;
-}
+  
+
 //To Create an array to store indexes to splice more than one element
 function selectedItems(g) {
+  g=Number(g);
   arrSplice.push(g);
+  arrSplice.sort();
+  arrSplice.reverse();
+  console.log(arrSplice);
+  console.log(disp_arr);
 }
 //To delete the selected items
 function deleteProd() {
-  arrSplice.forEach(el => {
+  
+  arrSplice.forEach((el,index) => {
+    console.log("HI"+index);
+    console.log(el);
     disp_arr.splice(el,1);
   });
   dsiplay(disp_arr);
